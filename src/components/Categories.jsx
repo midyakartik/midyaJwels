@@ -1,46 +1,21 @@
 import React from 'react'
 import {IoShirtOutline,IoGlassesSharp,IoWatch} from 'react-icons/io5'
+import { category } from '../Apis/CategoryAPI'
 const Categories = () => {
+  
   return (
     <div className='w-11/12 m-auto'>
-      <div className='mt-10 grid grid-cols-4 lg:grid-cols-6 justify-items-center'>
-        <div className='space-y-2 text-center'>
-          <div className='w-24 h-16 bg-stone-200 flex items-center justify-center rounded-md'>
-            <IoShirtOutline size={'2.5rem'}/>
+      <div className='mt-10 grid grid-cols-4  justify-items-center'>
+        {category.map(data => (
+          <div className='space-y-2 text-center'>
+          <div className='w-24 h-24 bg-stone-200 flex items-center justify-center rounded-md'>
+            <img src={data.img} className='w-full m-auto h-full' alt="" srcset="" />
           </div>
-          <h1 className='font-semibold'>Shirts</h1>
+          <h1 className='font-semibold'>{data.name}</h1>
         </div>
-        <div className='space-y-2 text-center'>
-          <div className='w-24 h-16 bg-stone-200 flex items-center justify-center rounded-md'>
-            <IoGlassesSharp size={'2.5rem'}/>
-          </div>
-          <h1 className='font-semibold'>Shirts</h1>
-        </div>
-        <div className='space-y-2 text-center'>
-          <div className='w-24 h-16 bg-stone-200 flex items-center justify-center rounded-md'>
-            <IoWatch size={'2.5rem'}/>
-          </div>
-          <h1 className='font-semibold'>Shirts</h1>
-        </div>
-        <div className='space-y-2 text-center'>
-          <div className='w-24 h-16 bg-stone-200 flex items-center justify-center rounded-md'>
-            <IoShirtOutline size={'2.5rem'}/>
-          </div>
-          <h1 className='font-semibold'>Shirts</h1>
-        </div>
-        <div className='space-y-2 text-center'>
-          <div className='w-24 h-16 bg-stone-200 flex items-center justify-center rounded-md'>
-            <IoGlassesSharp size={'2.5rem'}/>
-          </div>
-          <h1 className='font-semibold'>Shirts</h1>
-        </div>
-        <div className='space-y-2 text-center'>
-          <div className='w-24 h-16 bg-stone-200 flex items-center justify-center rounded-md'>
-            <IoWatch size={'2.5rem'}/>
-          </div>
-          <h1 className='font-semibold'>Shirts</h1>
-        </div>
-
+        ))}
+        
+        
       </div>
     </div>
   )

@@ -1,46 +1,64 @@
 export const product = [
     {
         name:"name",
+        id:"1",
         price:"340",
         img:"images/products/p1.jpg",
+        description:"Description"
     },
     {
         name:"name",
+        id:"2",
         price:"340",
         img:"images/products/p2.jpg",
+        description:"Description"
     },
     {
         name:"name",
+        id:"3",
         price:"340",
         img:"images/products/p3.jpg",
+        description:"Description"
     },
     {
         name:"name",
+        id:"4",
         price:"340",
         img:"images/products/p4.jpg",
+        description:"Description"
     },
     {
         name:"name",
+        id:"5",
         price:"340",
         img:"images/products/p5.jpg",
+        description:"Description"
     },{
         name:"name",
+        id:"6",
         price:"340",
         img:"images/products/p6.jpg",
+        description:"Description"
     },
     {
         name:"name",
+        id:"7",
         price:"340",
         img:"images/products/p7.jpg",
+        description:"Description"
     },
     {
         name:"name",
+        id:"8",
         price:"340",
         img:"images/products/p8.jpg",
+        description:"Description"
     },
     {
         name:"name",
+        id:"9",
         price:"340",
         img:"images/products/p9.jpg",
+        description:"Description"
     },
 ]

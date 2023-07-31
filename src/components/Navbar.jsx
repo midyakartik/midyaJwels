@@ -1,15 +1,19 @@
 import React from 'react'
 import {IoMdCart} from 'react-icons/io'
+import { BrowserRouter, Link } from 'react-router-dom'
 const Navbar = () => {
   return (
     <nav className='w-full flex justify-center '>
+      
       <div className='lg:w-3/6 w-11/12 flex items-center justify-between'>
-        <a className='underline' href="/">Home</a>
-        <a className='underline' href="/">Products</a>
+        <Link className='underline' to="/">Home</Link>
+        <Link className='underline' to="/">Products</Link>
         <img className='w-28' src="images/logo.png" alt="" />
-        <a className='underline' href="/">Collections</a>
-        <IoMdCart size={'1.5rem'}/>
+        <Link className='underline' to="/">Collections</Link>
+        
+        <Link to='/cart'> <IoMdCart size={'1.5rem'}/> </Link>
       </div>
+      
     </nav>
   )
 }

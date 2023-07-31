@@ -1,12 +1,14 @@
 import {Navbar,Footer} from './components';
+import { Cart } from './Pages/Cart';
 import Home from './Pages/Home';
 import ProductDetail from './Pages/ProductDetail';
 import {BrowserRouter as Router ,Routes,Route} from 'react-router-dom'
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      
       <Router>
+      <Navbar/>
         <Routes>
           <Route
           path='/'
@@ -17,10 +19,16 @@ function App() {
           path='/product-detail'
           element={<ProductDetail/>}>
           </Route>
+          
+          <Route
+          path='/cart'
+          element={<Cart/>}>
+          </Route>
 
         </Routes>
+        <Footer/>
       </Router>
-      <Footer/>
+      
     </div>
   );
 }
